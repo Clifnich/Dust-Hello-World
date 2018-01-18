@@ -1,0 +1,1 @@
+(function(dust){dust.register("hello",body_0);function body_0(chk,ctx){return chk.w("you are a rock star ").f(ctx.get(["name"], false),ctx,"h");}body_0.__dustBody=!0;return body_0}(dust));

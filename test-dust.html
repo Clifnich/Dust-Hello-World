@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+	<script type="text/javascript" src="dust-full.js"></script>
+	<script type="text/javascript" src="rock.js"></script>
+	
+</head>
+<body>
+	Yiyiyiyi
+	<!--ipt type="text/dust" id="hello">Hello {world}!</script>-->
+	
+	<p id='output'></p>
+
+	<script type="text/javascript">
+		//var src = document.getElementById('hello').textContent;
+		// Compile the template under the name 'hello'
+		//var compiled = dust.compile(src, 'hello');
+		// Register the template with Dust
+		// dust.loadSource(compiled);
+		// // Render the template
+		// dust.render('hello', { world: "Earth" }, function(err, out) {
+		// 	// 'out' contains the rendered output
+		// 	document.getElementById('output').textContent = out;
+
+		// short cut
+		dust.render('hello',{ name: "Alpha Centauri" }, function(err, out) {
+			document.getElementById('output').textContent = out;
+		});
+	</script>
+
+
+</body>
+</html>
